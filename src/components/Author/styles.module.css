@@ -1,0 +1,13 @@
+.author {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.author a {
+  font-size: 12px;
+  font-size: 900;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  text-decoration: none;
+}
