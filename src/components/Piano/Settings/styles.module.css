@@ -1,0 +1,20 @@
+.settings {
+  display: flex;
+  justify-content: flex-end;
+  padding: 13px 0px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.on {
+  background-color: #058359;
+}
+
+.off {
+  background-color: #651844;
+}

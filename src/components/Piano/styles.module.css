@@ -1,0 +1,12 @@
+:root {
+  --black_note_width: 50px;
+}
+
+.piano {
+  display: flex;
+}
+
+.loading {
+  color: #fff;
+  font-size: bold;
+}

@@ -1,0 +1,14 @@
+.octave {
+  display: flex;
+}
+
+.note_wrapper {
+  position: relative;
+}
+
+.sharp_note_wrapper {
+  position: absolute;
+  top: 0;
+  right: calc(var(--black_note_width) / -2);
+  z-index: 1000;
+}

@@ -1,0 +1,32 @@
+.note {
+  border: 2px solid #000;
+  background-color: #fff;
+  width: 70px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 40px;
+  border-radius: 8px;
+}
+
+.note:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+.note_active {
+  background-color: rgb(37, 157, 255) !important;
+}
+
+.sharp_note {
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+  width: 50px;
+  height: 250px;
+  border-radius: 0px 0px 8px 8px;
+
+  box-shadow: 4px 6px 20px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 6px 20px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 6px 20px -9px rgba(0, 0, 0, 0.75);
+}
