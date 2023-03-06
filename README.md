@@ -4,7 +4,7 @@ Bienvenidos! Hice un pequeño Piano con React.js y Tone.js controlado por mouse 
 
 ![Piano con React y Tone.js](./public/piano-react.png)
 
-## Aplicamos:
+## Aplicamos
 
 - React Create Application (CRA)
 - Uso de Context y Provider
@@ -12,7 +12,7 @@ Bienvenidos! Hice un pequeño Piano con React.js y Tone.js controlado por mouse 
 - Manejo de eventos del teclado y mouse
 - Uso de la librería Tone.js
 
-## Requerimientos:
+## Requerimientos
 
 - Node >= v12.4.0
 - tone v14.7.77 (obligatorio)
@@ -28,6 +28,12 @@ Bienvenidos! Hice un pequeño Piano con React.js y Tone.js controlado por mouse 
     │   ├── package.json
     │   └── README.md
     └── public                      # Assets
+
+## Advertencias y Recomendaciones
+
+- La descarga de las notas de Piano toma un tiempo en finalizar a pesar de que la promesa resuelve con éxito.
+- Debido a lo primero mencionado, las teclas funcionan segundos después de mostrado el Piano.
+- Puedes agregar más teclas y/o octavas en el archivo `src/components/Piano/octavesConfig.js`
 
 ## Autor
 

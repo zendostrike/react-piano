@@ -4,10 +4,17 @@ import { Piano as PianoTone } from "@tonejs/piano";
 import { useKeyboard } from "../hooks";
 import { PianoContext } from "./pianoContext";
 
+// Ignore following line, just for metrics
+import { trackKeyDown, trackPianoLoaded } from "../mixpanel";
+
 export function PianoProvider({ children }) {
   const [pedal, setPedal] = useState(false);
   const [mouseDown, setMouseDown] = useState(false);
   const [loading, setLoading] = useState(true);
+
+  // Ignore following line, just for metrics
+  const [pianoPlayed, setPianoPlayed] = useState(false);
+
   const pianoRef = useRef();
 
   const { pressedKeys, pianoAreaRef } = useKeyboard();
@@ -23,6 +30,9 @@ export function PianoProvider({ children }) {
 
     // Load piano notes files
     pianoRef.current.load().then(() => {
+      // Ignore following line, just for metrics
+      trackPianoLoaded();
+
       setLoading(false);
     });
   }, []);
@@ -39,6 +49,13 @@ export function PianoProvider({ children }) {
 
   const keyDown = (note) => {
     pianoRef.current.keyDown({ note });
+
+    //  Ignore following line, just for metrics
+    if (!pianoPlayed) {
+      trackKeyDown(note);
+
+      setPianoPlayed(true);
+    }
   };
 
   const keyUp = (note) => {
