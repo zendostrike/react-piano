@@ -1,6 +1,6 @@
 # Piano Online con React.js y Tone.js
 
-Bienvenidos! Hice un pequeño Piano con React.js y Tone.js controlado por mouse o teclado.
+Bienvenidos! Hice un pequeño Piano con React.js y Tone.js controlado por mouse o teclado. Abrir [Demo](https://react-piano-delta.vercel.app/).
 
 ![Piano con React y Tone.js](./public/piano-react.png)
 
